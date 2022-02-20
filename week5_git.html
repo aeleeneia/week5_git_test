@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normilze.css" />
+
+    <style>
+        p,
+        header,
+        section,
+        aside,
+        footer {
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center
+        }
+
+        p,
+        header,
+        section,
+        aside {
+            padding-top: 20px;
+        }
+
+        header {
+            background-color: rgb(177, 177, 177);
+            padding-bottom: 20px;
+        }
+
+        section {
+            float: left;
+            width: 70%;
+            background-color: rgb(240, 240, 179);
+            height: 350px;
+        }
+
+        .flex-container {
+            display: inline-block;
+            background-color: rgb(221, 195, 146);
+            margin: 5px;
+            padding: 10px;
+            width: 45%;
+            height: 40px;
+        }
+
+        #flex-container3 {
+            width: 95%;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: rgb(191, 223, 191);
+            height: 350px;
+        }
+
+        footer {
+            clear: both;
+            height: 120px;
+            background-color: rgb(177, 177, 177);
+        }
+
+        .footer_part {
+            display: inline-block;
+            background-color: white;
+            width: 22%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">[Шапка страницы]</header>
+    <main class="main">
+        <section class="section">
+            <p>[Основная часть]</p>
+            <article class="flex-container">[Еще 1]</article>
+            <article class="flex-container">[Еще 2]</article>
+            <article id="flex-container3" class="flex-container">[Еще 3]</article>
+        </section>
+
+        <aside class="aside">[Боковая часть]</aside>
+    </main>
+    <footer class="footer">
+        <p class="footer_part">[Секция футера 1]</p>
+        <p class="footer_part">[Секция футера 2]</p>
+        <p class="footer_part">[Секция футера 3]</p>
+        <p class="footer_part">[Секция футера 4]</p>
+    </footer>
+
+</body>
+
+</html>
